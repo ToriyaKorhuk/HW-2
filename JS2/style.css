@@ -1,0 +1,122 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+span{
+    color: red;
+}
+h1{
+    text-align: center;
+    font-size: 50px;
+    color: darkorchid;
+}
+#name {
+height: 10%;
+width: 10%;
+background-color: violet;
+border-radius: 10%;
+    
+}
+#place{
+    width: 60%;
+    height: 40px;
+    border-radius: 30px;
+    background-color: sandybrown;
+    text-align: center;
+    font-size: 25px;
+    background-image: linear-gradient(to right, rgb(232, 158, 239) 0%, rgb(240, 48, 192) 51%, rgb(239, 158, 158) 100%);
+
+}
+#save, #clear{
+    width: 20%;
+    height: 30px;
+    border-radius: 30px;
+    background-color: sandybrown;
+    text-align: center;
+    font-size: 25px;
+    background-image: linear-gradient(to right, rgb(232, 158, 239) 0%, rgb(240, 48, 192) 51%, rgb(239, 158, 158) 100%);
+
+}
+.todo{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+ background-image: url(./to-do-list-apps-1400x1050.png);
+ 
+   
+}
+.todo li{
+  display: flex;
+  justify-content: center;
+  color: white;
+  padding: 20px 30px;
+  margin: 10px 20px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-image: linear-gradient(to right, rgb(239, 158, 198) 0%, rgb(240, 48, 64) 51%, rgb(239, 158, 235) 100%);
+  background-size: 200% auto;
+  box-shadow: 0 0 20px rgba(0,0,0,.1);
+  transition: .5s;
+}
+li:hover {background-position: right center;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+background-image:url(./ToDoList_1920x1080.jpg );
+text-align: center;
+}
+#modalwindow{
+    height: 30px;
+    border-radius: 30px;
+    background-color: sandybrown;
+    text-align: center;
+    font-size: 25px;
+    background-image: linear-gradient(to right, rgb(232, 158, 239) 0%, rgb(240, 179, 48) 51%, rgb(231, 239, 158) 100%);
+
+}
+ .modal p{
+    text-align: center;
+   color: salmon;
+   font-size: 30px;
+}
+.modal .modalcontent {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    z-index: 99999;
+}
+.modal .modalcontent .closemodal {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
